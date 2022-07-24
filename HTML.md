@@ -36,14 +36,14 @@
 ### 1.head 태그
 
 - head 요소는 메타데이터를 포함하기 위한 요소이며 웹페이지에 단 하나만 존재한다. 메타데이터는 html문서의 title,style,link,script에 대한 데이터로 화면에 표시되지 않는다. head요소에는 메타데이터 이외의 화면에 표시되는 일체의 요소를 포함시킬 수 없다.
+- head 요소는 메타데이터를 포함하기 위한 요소이며 웹페이지에 단 하나만 존재한다. 메타데이터는 html문서의 title,style,link,script에 대한 데이터로 화면에 표시되지 않는다. head요소에는 메타데이터 이외의 화면에 표시되는 일체의 요소를 포함시킬 수 없다.
 
 | tag | Description |
 | --- | --- |
 | title | 문서의 제목을 지정한다. |
 | style | 문서를 위한 style을 지정한다. |
 | link | 외부 리소스와의 연계 정보를 정의한다. 주로 CSS파일을 연계할 때 사용한다. |
-| script | client-side,javascript를 정의한다.
-Src어트리뷰트를 사용하여 외부 Java Script 파일을 로드할 수 있다. |
+| script | client-side,javascript를 정의한다.Src 어트리뷰트를 사용하여 외부 Java Script 파일을 로드할 수 있다. |
 | meta | 메타데이터 정의에 사용된다. 메타데이터는 브라우저 검색엔진등에 사용된다.
 <meta charset=”utf-8”>
 브라우저가 사용하는 문자셋을 정의한다.
