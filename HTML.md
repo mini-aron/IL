@@ -43,7 +43,7 @@
 | style | 문서를 위한 style을 지정한다. |
 | link | 외부 리소스와의 연계 정보를 정의한다. 주로 CSS파일을 연계할 때 사용한다. |
 | script | client-side,javascript를 정의한다.
-Src 어트리뷰트를 사용하여 외부 Java Script 파일을 로드할 수 있다. |
+Src어트리뷰트를 사용하여 외부 Java Script 파일을 로드할 수 있다. |
 | meta | 메타데이터 정의에 사용된다. 메타데이터는 브라우저 검색엔진등에 사용된다.
 <meta charset=”utf-8”>
 브라우저가 사용하는 문자셋을 정의한다.
