@@ -23,7 +23,7 @@ const io = new IntersectionObserver((entries, observer) => {}, options)
 io.observe(element)
 ```
 
-### entries
+#### entries
 + ```boundingClientRect```:관찰 대상의 사각형 정보(DOMRectReadOnly)
 + ```intersectionRect```:관찰 대상의 교차한 영역 정보(DOMRestReadOnly)
 + ```intersectionRatio```:관찰 대상의 교차한 영역 백분율(intersectionRest영역에서 boundingClientRest 영역까지 비율, Number)
@@ -32,7 +32,12 @@ io.observe(element)
 + ```target```:관찰 대상 요소(Element)
 + ```time```:변경이 발생한 시간 (DOMHighResTimeStamp)
 
+#### observer
+콜백이 실행되는 해당 인스턴스를 참조한다.
 
+
+### options
++ root
 
 
 
