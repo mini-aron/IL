@@ -23,5 +23,18 @@ const io = new IntersectionObserver((entries, observer) => {}, options)
 io.observe(element)
 ```
 
+### entries
++ ```boundingClientRect```:관찰 대상의 사각형 정보(DOMRectReadOnly)
++ ```intersectionRect```:관찰 대상의 교차한 영역 정보(DOMRestReadOnly)
++ ```intersectionRatio```:관찰 대상의 교차한 영역 백분율(intersectionRest영역에서 boundingClientRest 영역까지 비율, Number)
++ ```isIntersecting```:관찰 대상의 교차 상태(Boolean)
++ ```rootBounds```:지정한 요소의 사각형 정보(DOMRestReadOnly)
++ ```target```:관찰 대상 요소(Element)
++ ```time```:변경이 발생한 시간 (DOMHighResTimeStamp)
+
+
+
+
+
 
 
