@@ -37,8 +37,26 @@ io.observe(element)
 
 
 ### options
-+ root
++ root <br>
+타겟의 가시성을 검사하기 위해 뷰포트 대신 사용할 요소객체를 지정 <br>
+``` {root: documunt.getElementById('my-viewport')} ```
++ rootmargin <br>
+```margin```을 이용해 root범위를 확장하거나 축소가능 <br>
+```{rootMargin: '200px 0px'}```
++ threshold <br>
+옵저버가 실행되기 위해 타겟의 가시성이 얼마나 필요한지 백분율로 표시 <br>
+```{threshold: 0}``` viewport와 타켓이 교차하는 순간
+```{threshold: 0.3}``` viewport와 타켓이30%일 교차했을 때
+```{threshold: 1}``` viewport에 타켓이 모두 교차했을 때
 
+### methods
+
++ ```odserve()``` <br>
+대상 요소 관찰
++ ```unodserve()``` <br>
+대상 요소 관찰 중지
++ ```disconnect()``` <br>
+intersectionObserver 인스턴스가 관찰하는 모든 요소의 관찰을 
 
 
 
