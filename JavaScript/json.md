@@ -23,4 +23,36 @@ A function than transforms the results.
  + ```space```<br>
  Adds indentation, while space, and line break characters to the return-value JSON text to make it easier to read.
 
-### EX
+### ex for stringify
+```
+
+//1. Object to JSON
+//stringfy(obj)
+let json = JSON.stringify(true);
+console.log(json);
+
+json = JSON.stringify(['apple','banana']);
+console.log(json);
+
+const rabbit = {
+    name: 'tori',
+    color: 'white',
+    size: null,
+    birthDate: new Date(),
+    jump: () => {
+        console.log(`${name} can jump!`);
+    },
+};
+
+json = JSON.stringify(rabbit);
+console.log(json);
+
+json = JSON.stringify(rabbit,['name','color']);
+console.log(json);
+
+json = JSON.stringify(rabbit, (key, value) => {
+    console.log(`key: ${key}, value: ${value}`);
+    return key === 'name' ? 'aron': value;
+});
+console.log(json);
+```
