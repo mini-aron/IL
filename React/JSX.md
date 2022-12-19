@@ -19,7 +19,26 @@ function App() {
 }
 ```
 
-
++ 컴포넌트에 여러 요소가 있다면 반드시 부모 요소 하나로 감싸야함
+```
+function App() {
+  return (
+    <h1>welcome to</h1>
+    <h1>react</h1>
+  )
+}
+```
+↓↓↓↓↓↓
+```
+function App() {
+  return (
+    <div>
+      <h1>welcome to</h1>
+      <h1>react</h1>
+    </div>
+  )
+}
+```
 
 
 
