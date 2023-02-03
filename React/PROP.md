@@ -3,23 +3,49 @@
 
 
 ### jsx 내부 props 렌더링
-#### component.js
+
 ```
+// MYcomponent.js
 const MYComponent = prop =>{
   return <div>안녕하세요, 제이름은 {props.name}입니다.</div>
  };
  export defualt MYComponent;
-```
-#### App.js
-```
+
+// App.js
 import MYComponent from './MYComponent';
 
 const App =() => {
 return <MYComponent name="React"/>
 };
-```
-#### result
-```
+
+// result
 안녕하세요, 제이름은 React입니다.
 ```
 
+#### props 기본값 설정:defaultProps
+```
+//App.js
+import MYComponent from './MYComponent';
+
+const App =() => {
+return (
+   <MYComponent/>
+   <MYComponent name="React"/>
+   )
+};
+
+// component.js
+const MYComponent = prop =>{
+  return <div>안녕하세요, 제이름은 {props.name}입니다.</div>
+ };
+ 
+ MYComponent.defaultProps ={
+  name:'기본이름'
+ };
+ export defualt MYComponent;
+ 
+ // result
+안녕하세요, 제이름은 기본이름입니다.
+안녕하세요, 제이름은 React입니다.
+ 
+```
