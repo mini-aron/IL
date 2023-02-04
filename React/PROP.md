@@ -22,7 +22,7 @@ return <MYComponent name="React"/>
 안녕하세요, 제이름은 React입니다.
 ```
 
-#### props 기본값 설정:defaultProps
+### props 기본값 설정:defaultProps
 ```
 //App.js
 import MYComponent from './MYComponent';
@@ -48,4 +48,36 @@ const MYComponent = prop =>{
 안녕하세요, 제이름은 기본이름입니다.
 안녕하세요, 제이름은 React입니다.
  
+```
+### children
+
+```
+//App.js
+import MYComponent from './MYComponent';
+
+const App =() => {
+return (
+   <MYComponent>REACT</MYComponent>
+  
+   )
+};
+
+// component.js
+const MYComponent = prop =>{
+  return (
+    <div>
+      안녕하세요, 제이름은 {props.name}입니다.<br/>
+      children값은 {props.children}입니다.
+    </div>
+    )
+ };
+ 
+ MYComponent.defaultProps ={
+  name:'기본이름'
+ };
+ export defualt MYComponent;
+ 
+ // result
+안녕하세요, 제이름은 기본이름입니다.
+children값은 REACT입니다.
 ```
