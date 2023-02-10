@@ -22,8 +22,13 @@ Counter.js
       <div>
         <h1>{number}</h1>
         <button
-          //onClick을 
+          onClick={()=>{
+           this.state({ number: number+1 });
+          
+          }}
         >
+        +1
+        </button>
       </div>
     )
   }
