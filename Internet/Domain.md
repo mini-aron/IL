@@ -6,8 +6,19 @@ ex) naver.com => 220.95.233.172
 + DNS는 역트리 형태의 계층적 구조로 구성돼 데이터베이스시스템을 관리한다.
 + 해당 구조에서 점은 루트도메인 역할을 하며 프레임 워크의 최상단에 위치한다.
 + 점아래의 도메인 이름 공간은 참조하는 위치에 따라 다양한 단계로 나뉜다.
-<br/>
-+ TLD(Top-level domains): 최상위 도메인
-+ SLD(Second-level domains): 차상위 도메인
-+ Third-level domains
+
+* TLD(Top-level domains): 최상위 도메인
+* SLD(Second-level domains): 차상위 도메인
+* Third-level domains
+
+### TLD(Top-level domains)
+>도메인 이름의 가장 오른쪽 부분으로 마지막 점 뒤에 위치해 위치 및 목적과 같은 웹사이트 주소의 특성을 인식할 수 있도록 돕는다.
+#### 여러 TLD들
++ 일반 최상위 도메인(gTLD)
+  * 3글자 이상으로 구성
+  * 누구나 등록할 수 있음
++ 후원 최상위 도메인(gTLD)
+  * 민간단체에서 지원하고 감독하는 도메인
+  * 사용할 수 있는 sTLD의 수는 제한
+  * 모든 등록은 해당 기관 또는 사업체의 승인을 받아야함
 
