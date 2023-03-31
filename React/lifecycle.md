@@ -15,5 +15,8 @@
 + 부모 컴포넌트가 리렌더링 될때
 + ```this.forceUpdate```로 강제로 렌더링을 트리거할 때
 
+### 언마운트(unmount)
++ 컴포넌트가 사라질 때
++ ```componentWillUnmount```: DOM에 직접 등록했었던 이벤트등를 제거한다.
 
 
