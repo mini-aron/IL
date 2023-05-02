@@ -1,4 +1,4 @@
-## Redux(리덕스)
+# Redux(리덕스)
 > javascript 상태관리 라이브러리
 
 ### Redux의 기본개념:3가지 원칙
