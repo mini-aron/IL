@@ -6,3 +6,6 @@
 ```npm
 >npm i -D jest
 ```
+## jest기본문법
++ test파일 생성
++ test 파일은 `테스트할함수파일명.test.js`로 한다.
