@@ -1,2 +1,2 @@
-# TIL
-Today I Learn😊
+# IL
+I Learn😊
