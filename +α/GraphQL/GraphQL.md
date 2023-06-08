@@ -24,3 +24,46 @@
 #### 1. 고정된 요청과 응답이 필요할 때에는 query로 인해 요청의 크기가 커질 수 있다.
 #### 2. 캐싱이 REST보다 복잡하다.
 #### 3. 파일 업로드 구현방법이 정해져있지 않아 직접 구현해야한다.
+
+### ex)
+### Operation
+```
+{
+  allFilms {
+    totalCount
+    films {
+      title
+    }
+  }
+}
+```
+### Response
+```
+{
+  "data": {
+    "allFilms": {
+      "totalCount": 6,
+      "films": [
+        {
+          "title": "A New Hope"
+        },
+        {
+          "title": "The Empire Strikes Back"
+        },
+        {
+          "title": "Return of the Jedi"
+        },
+        {
+          "title": "The Phantom Menace"
+        },
+        {
+          "title": "Attack of the Clones"
+        },
+        {
+          "title": "Revenge of the Sith"
+        }
+      ]
+    }
+  }
+}
+```
