@@ -29,3 +29,8 @@ I Learn😊
 +[react의 폴더구조](https://github.com/mini-aron/IL/blob/main/React/%ED%8F%B4%EB%8D%94%EA%B5%AC%EC%A1%B0.md)
 + [sideEffect](https://github.com/mini-aron/IL/blob/main/React/sideEffect.md)
 + [Suspense](https://github.com/mini-aron/IL/blob/main/React/suspense.md)
+
+## +α
++ [GraphQL](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/GraphQL/GraphQL.md)
++ [SPA&MPA](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/SPA%26MPA.md)
+
