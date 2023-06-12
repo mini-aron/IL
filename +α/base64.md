@@ -26,3 +26,11 @@
 ![image](https://blog.kakaocdn.net/dn/z8EhG/btrJE2z3eR0/a2h9gmQhDvT1NkkjkxhBG0/img.jpg)
 #### 문자열 "M" 변환과정
 ![image](https://blog.kakaocdn.net/dn/d7WHPu/btrJHe74OrG/T8eQXm8lP5EmerMBmd4v31/img.jpg)
+
+### 문제
+> 위와같은 변환과정을 거치고나면 base64로 인코딩한 파일의 사이즈가 우너본보다 더 커진다는 것
+
+### 굳이 base64를 사용하는 이유
+> ascii는 7bits 인코더인데 나머지 1bit를 처리하는 방식이 시스템 별로 다르고 일부 제어문자의 경우도 시스템별로 다른 코드값을 가진다.  
+> 이러한 문제로 직접 시스템간 전달하기에 문제가 생길 수 있어 base64를 사용하게 되었다.  
+> 이렇게 되면 문자코드에도 영향받지않고 시스템 간에 전달도 문제없이 가능하기 때문이다.
