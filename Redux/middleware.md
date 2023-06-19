@@ -7,3 +7,30 @@
 리듀서가 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)을 처리하기 전에 미들웨어가 할 수 있는 작업은 여러가지가 있다.  
 전달맏은 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)을 단순히 콘솔에 기록하거나, 전달받은 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)정보를 기반으로 액션을 취소하거나,  
 다른종류의 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)을 추가로 디스패치 할 수 있다.
+
+## 다양한 미들웨어들
+### redux-thunk
++ 리덕스를 사용하는 프로젝트에서 가장 기본적으로 사용하는 미들웨어
+#### thunk
+> thunk는 특정 작업을 나중에 할 수 있도록 미루기 위해 함수형태로 감싼 것을 의미한다.
+
+#### counter 예시
+적용 전
+```js
+const addOne = x => x + 1;
+addOne(1);
+```
+적용 후
+```js
+const addOne = x => x + 1;  //연산
+function addOneThunk (x){  //연산하고 반환
+  const thunk = () => addOne(x);
+  return thunk;
+}
+
+const fn = addOneThunk(1);//fn에 넣으면
+setTimeout(() => {
+  const value = fn(); //fn이 실행되는 시점에 연산된다.
+  console.log(value);
+}, 1000)
+```
