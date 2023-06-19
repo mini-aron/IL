@@ -4,6 +4,6 @@
 
 ![image](https://github.com/mini-aron/IL/assets/105274015/098b2592-8e9c-4cda-9fd8-aa8ead6d53e7)
 
-리듀서가 액션을 처리하기 전에 미들웨어가 할 수 있는 작업은 여러가지가 있다.  
-전달맏은 액션을 단순히 콘솔에 기록하거나, 전달받은 액션정보를 기반으로 액션을 취소하거나,  
-다른종류의 액션을 추가로 디스패치 할 수 있다.
+리듀서가 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)을 처리하기 전에 미들웨어가 할 수 있는 작업은 여러가지가 있다.  
+전달맏은 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)을 단순히 콘솔에 기록하거나, 전달받은 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)정보를 기반으로 액션을 취소하거나,  
+다른종류의 [액션](https://github.com/mini-aron/IL/blob/main/Redux/Redux.md#2action%EC%95%A1%EC%85%98)을 추가로 디스패치 할 수 있다.
