@@ -34,3 +34,12 @@ setTimeout(() => {
   console.log(value);
 }, 1000)
 ```
+#### redux-thunk lib
+> redux-chunk라이브러리를 사용하면 thunk함수를 만들어 디스패치할 수 있습니다.
+> 그러면 리덕스 미들웨어가 그 함수를 전달받아 store의 dispatch와getstate를 파라미터로 넣어서 호출 해 줍니다.
+```js
+const sampleThunk = () => (dispatch, getState) => {
+  //현제상태를 참조할 수 있고,
+  //새 액션을 디스패치 할 수도 있다.
+}
+```
