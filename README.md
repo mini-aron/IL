@@ -36,4 +36,7 @@ I Learn😊
 ## +α
 + #### [GraphQL](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/GraphQL/GraphQL.md)
 + #### [SPA&MPA](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/SPA%26MPA.md)
-
++ #### [라이브러리,패키지,모듈의 차이](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/lib%26package%2Cmodule.md)
++ #### [Encoding,Decoding](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/Encoding%26Decoding.md)
++ #### [base64](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/base64.md)
++ #### [jset](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/Jest.md)
