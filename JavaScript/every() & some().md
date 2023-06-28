@@ -33,3 +33,4 @@ every(function callbackFn(element, index, array) { ... }, thisArg)
   - element : 배열에서 처리되는 현재 요소
   - index : 처리할 현재 요소의 인덱스
   - array : every를 호출한 배열
+  - thisArg(optional) : callbackFn을 실행할 때 thi값
