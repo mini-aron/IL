@@ -44,3 +44,7 @@
 + Resource Server : OAuth 2.0을 관리하는 서버의 자원을 관리하는 곳
 ![image](https://github.com/mini-aron/IL/assets/105274015/52ad46f8-864b-441b-ac9c-3010d29adc46)
 
++ Resource Owner가 Client에게 인증요청
++ client는 Authorization Request를 통해 Resource Owner에게 인증할 수단을 보낸다.
+
+
