@@ -38,10 +38,11 @@ I Learn😊
 + #### [SPA&MPA](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/SPA%26MPA.md)
 + #### [라이브러리,패키지,모듈의 차이](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/lib%26package%2Cmodule.md)
 + #### [Encoding,Decoding](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/Encoding%26Decoding.md)
-+ #### [base64](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/base64.md)
 + #### [jset](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/Jest.md)
 + #### [lib&packge&module](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/lib%26package%2Cmodule.md)
 ### Login
 + #### [Login 방법 4가지](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/Login/Login%20%EB%B0%A9%EB%B2%954%EA%B0%80%EC%A7%80.md)
 + #### [jwt Login](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/Login/jwtLogin.md)
-
+### base64
++ #### [base64](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/base64.md)
++ #### [Encoding&Decoding](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/base64/Encoding%26Decoding.md)
