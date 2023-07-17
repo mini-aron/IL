@@ -14,7 +14,6 @@ I Learn😊
 + #### [JSX](https://github.com/mini-aron/IL/blob/main/React/JSX.md)
 + #### [PROP](https://github.com/mini-aron/IL/blob/main/React/PROP.md)
 + #### [PWA](https://github.com/mini-aron/IL/blob/main/React/PWA.md)
-+ #### [axios](https://github.com/mini-aron/IL/blob/main/React/axios.md)
 + #### [lifecycle](https://github.com/mini-aron/IL/blob/main/React/lifecycle.md)
 + #### [react-toastify](https://github.com/mini-aron/IL/blob/main/React/react-toastify.md)
 + #### [react.memo](https://github.com/mini-aron/IL/blob/main/React/react.memo.md)
@@ -33,6 +32,11 @@ I Learn😊
 + #### [useReducer](https://github.com/mini-aron/IL/blob/main/React/hooks/useReducer.md)
 + #### [useRef](https://github.com/mini-aron/IL/blob/main/React/hooks/useRef.md)
 
+### axios
++ #### [axios](https://github.com/mini-aron/IL/blob/main/React/axios/axios.md)
++ ### [config-option](https://github.com/mini-aron/IL/blob/main/React/axios/axios_config_option.md)
++ ### [instance](https://github.com/mini-aron/IL/blob/main/React/axios/axios_instance.md)
++ ### [interceptor](https://github.com/mini-aron/IL/blob/main/React/axios/axios_interceptor.md)
 ## +α
 + #### [GraphQL](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/GraphQL/GraphQL.md)
 + #### [SPA&MPA](https://github.com/mini-aron/IL/blob/main/%2B%CE%B1/SPA%26MPA.md)
