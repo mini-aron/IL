@@ -27,4 +27,12 @@ console.log(arr.join(' ')); //'apple banana orange'
 let arr = 'A,B,C,D';
 console.log(arr.split(','));  //[A, B, C, D];
 ```
+### reverse
+> 배열의 아이템의 순서를 뒤집는다.
 
+```js
+let arr = [1, 2, 3, 4, 5, 6];
+
+console.log(arr.reverse()); //[6, 5, 4, 3, 2, 1]
+console.log(arr);  // [6, 5, 4, 3, 2, 1] 원래배열도 변경되어있다.
+```
