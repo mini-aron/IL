@@ -7,7 +7,7 @@ I Learn😊
 + #### [hosting](https://github.com/mini-aron/IL/blob/main/Internet/Hosting.md)
 ## JavaScript
 + #### [arrMethod](https://github.com/mini-aron/IL/blob/main/JavaScript/functions/arrMethod.md)
-+ #### [strMethod](https://github.com/mini-aron/IL/blob/main/JavaScript/functions/arrMethod.md)
++ #### [strMethod](https://github.com/mini-aron/IL/blob/main/JavaScript/functions/strMethod.md)
 + #### [proto-type](https://github.com/mini-aron/IL/blob/main/JavaScript/Proto-type.md)
 ## React
 + #### [React](https://github.com/mini-aron/IL/blob/main/React/react.md)
