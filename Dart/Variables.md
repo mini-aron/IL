@@ -75,8 +75,6 @@ void main(){
 }
 ```
 
-
-
 ## Type
 아래 타입을 포함한 거의 대부분의 타입들이 객체로 이루어져 있다. (함수도 객체)
 이것이 Dart가 진정한 객체 지향 언어로 불리는 이유이다.
@@ -88,5 +86,19 @@ int age = 10;
 double money = 52.55;
 num x = 12;
 num y = 1.2;
+}
+```
+
+## String Interpolation
+텍스트 안에 변수를 삽입하는 방법이다.
++ 단순 삽입은 따옴표 내부에 $변수명
++ 변수를 계산하여 삽입하는 법은 ${계산식}
++ `$` 그대로 표시는 escape문자 `\$`
+
+```dart
+void main() {
+    var name = 'aron';
+    var age = 10;
+    var greeting = 'Hello my name is $name I\'m ${age+2} nice to meet you';
 }
 ```
