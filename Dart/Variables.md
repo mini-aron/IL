@@ -106,8 +106,17 @@ gifts2['first'] = 'partridge';
 gifts2['second'] = 'turtledoves';
 gifts2['fifth'] = 'golden rings';
 ```
+## Sets
+Set에 속한 모든 아이템들이 유니크해야될 때 사용한다.
+유니크할 필요가 없다면 List를 사용하면 된다.
 
-
+```dart
+var numbers1 = {1, 2, 3};
+Set numbers2 = {1, 2, 3};
+numbers1.add(1);
+print(numbers1); //output: {1, 2, 3};
+```
+list는 대괄호를 쓰며 set은 중괄호를 쓴다는 것과 set의 요소들은 유니크하다는 것이다. list는 같은 요소가 여러개 반복될 수 있지만, set은 중복이 허용되지 않는다.
 ## Type
 아래 타입을 포함한 거의 대부분의 타입들이 객체로 이루어져 있다. (함수도 객체)
 이것이 Dart가 진정한 객체 지향 언어로 불리는 이유이다.
