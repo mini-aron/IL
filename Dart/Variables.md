@@ -55,7 +55,7 @@ dark에서 lists를 선언하는 것은 두 가지 방법이 있다.
 int case1 = [1,2,3,4,5];
 List case2 = [1,2,3,4,5];
 ```
-### collection if, collection for
+### collection if
 ```dart 
 void main(){
     var giveMeSix = true;
@@ -72,6 +72,19 @@ void main(){
     if(giveMeSix){
     case1.add(6);
     }
+}
+```
+### collection for
+```dart
+void main() {
+var oldFriends = ["minsu", "jun"];
+var newFriends = [
+"tom",
+"jon",
+for (var friend in oldFriends) "❤️ $friend"
+];
+
+print(newFriends); // [tom, jon, ❤️ minsu, ❤️ jun]
 }
 ```
 
