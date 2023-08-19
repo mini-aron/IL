@@ -49,6 +49,32 @@ void main() {
 
 ```
 
+### List
+dark에서 lists를 선언하는 것은 두 가지 방법이 있다.
+```dart
+int case1 = [1,2,3,4,5];
+List case2 = [1,2,3,4,5];
+```
+### collection if, collection for
+```dart 
+void main(){
+    var giveMeSix = true;
+    int case1 = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    if(giveMeSix) 6,
+    ];
+    print(case1); // output: [1, 2, 3, 4, 5, 6]
+    // 아래와 같은 기능이다.
+    if(giveMeSix){
+    case1.add(6);
+    }
+}
+```
+
 
 
 ## Type
