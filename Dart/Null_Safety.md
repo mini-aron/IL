@@ -5,7 +5,7 @@
 bool isEmpty(String string) => string.length == 0;
 
 main(){
-isEmpty(null);
+    isEmpty(null);
 }
 ```
 위 코드를 실행시키면 `NoSuchMethodError`를 실행한다.
