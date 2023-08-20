@@ -6,6 +6,14 @@ contextAPI는 상태를 전달할 때 객체형태의 value를 사용한다.
 하진만 Recoli의 경우 각각 전역 상태에 대한 atom이 생성되고 해당 상태를 구독하는 구성요소만 리렌더링 된다.  
 이로써 불필요한 리렌더링을 방지할 수 있다.
 
+## 설치
+```bash
+$ npm install recoil
+```
+```bash
+$ yarn add recoil
+```
+
 ## 주요개념
 ### data-flow graph
 상태 데이터가 atoms -> selectors -> 컴포넌트 순서로 흐르는 것을 말한다.
@@ -23,7 +31,7 @@ const fontSizeState = atom({
   default: 14,
 });
 ```
-등록된 전역 상태를 사용하기 위해서는 useRecoilState(키값)를 사용하면 된다.
+등록된 전역 상태를 사용하기 위해서는 `useRecoilState(키값)`를 사용하면 된다.
 ```js
 function FontButton() {
   const [fontSize, setFontSize] = useRecoilState(State);
