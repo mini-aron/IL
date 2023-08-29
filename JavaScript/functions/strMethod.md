@@ -99,3 +99,23 @@ console.log(text.startsWith("Hello"));  // true
 
 console.log(text.endsWith("script!"))  // true
 ```
+### repeat()
+> 문자열을 number만큼 반복한 결과를 반환한다.
+```js
+let str = "수박";
+let result = str.repeat(4);
+
+console.log(result);
+> 수박수박수박수박
+```
+
+### replace()
+> str1 문자열을 찾아서 str2 문자열로 바꿔 반환한다.
+```js
+let str1 = "abc";
+let str2 = "123";
+let result = "abcabc";
+
+console.log(result.replace(str1, str2));
+> 123abc
+```
