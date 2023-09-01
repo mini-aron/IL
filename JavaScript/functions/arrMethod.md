@@ -66,4 +66,14 @@ let arr = [1, 2, 3, 4, 5];
 console.log(arr.slice(2)) //2부터 쭉 [3, 4, 5]
 console.log(arr.slice(1,3)) //[2, 3]
 ```
+### fill
+배열의 시작 인덱스 부터 끝 인덱스 이전까지 정적 값 하나로 채운다.
 
+```js
+// 사용법
+arr.fill(value[, start[, end]]); // 배열을 채울값, 시작 인덱스, 끝 인덱스
+let arr = [1, 2, 3, 4];
+console.log(arr.fill(0,2,4)); //[1, 2, 0, 0]
+console.log(arr.fill(5, 1));  //[1, 5, 5, 5]
+console.log(arr.fill(6));     //[6, 6, 6, 6]
+```
