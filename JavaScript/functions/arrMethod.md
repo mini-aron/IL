@@ -67,7 +67,7 @@ console.log(arr.slice(2)) //2부터 쭉 [3, 4, 5]
 console.log(arr.slice(1,3)) //[2, 3]
 ```
 ### fill
-배열의 시작 인덱스 부터 끝 인덱스 이전까지 정적 값 하나로 채운다.
+> 배열의 시작 인덱스 부터 끝 인덱스 이전까지 정적 값 하나로 채운다.
 
 ```js
 // 사용법
@@ -77,3 +77,95 @@ console.log(arr.fill(0,2,4)); //[1, 2, 0, 0]
 console.log(arr.fill(5, 1));  //[1, 5, 5, 5]
 console.log(arr.fill(6));     //[6, 6, 6, 6]
 ```
+
+### at
+> 정수를 받아 해당 인덱스에 있는 요소를 반환한다.
+> 양수, 음수를 모두 사용할 수 있으며, 음수는 마지막 배열부터 거슬러 올라온다.
+```js
+let arr = [1, 2, 3, 4, 5, 6];
+console.log(arr.at(2)); // 3
+console.log(arr.at(-2)); // 5
+```
+
+### find 
+> 주어진 조건에 만족하는 첫번째 요소의 값을 반환한다.(없다면 undefined)
+```js
+let arr = [1, 2, 3, 4, 5, 6];
+const found = arr.find((element) => element > 4);
+console.log(found); // 5
+```
+
+### findLast
+> 배열을 역순으로 돌아 주어진 조건에 만족하는 첫번째 요소의 값을 반환한다.(없다면 undefined)
+```js
+let arr = [1, 2, 3, 4, 5, 6];
+const found = arr.findLast((element) => element > 4);
+console.log(found); // 6
+```
+
+### findIndex
+> 주어진 조건에 만족하는 첫번째 요소의 인덱스를 반환한다.(없다면 -1)
+
+```js
+let arr = [1, 2, 3, 4, 5, 6];
+const isLargeNumber = (element) => element > 4;
+console.log(arr.findIndex(isLargeNumber)); // 4
+```
+
+### findLastIndex
+> 배열을 역순으로 돌아 주어진 조건에 만족하는 첫번째 요소의 인덱스를 반환한다.(없다면 -1)
+```js
+let arr = [1, 2, 3, 4, 5, 6];
+const isLargeNumber = (element) => element > 4;
+console.log(arr.findLastIndex(isLargeNumber)); // 5
+```
+### flat
+> 모든 하위 배열 요소를 지정한 깊이까지 재귀적으로 이어붙인 새로운 배열을 생성한다.
+
+#### 사용법 
+```js
+const newArr = arr.flat([depth]);
+// depth: 중첩배열구조를 평탄화할 때 사용할 깊이 값. 기본값은 1
+// 반환값: 하위 배열을 이어붙인 새로운 배열
+```
+```js
+// 중첩배열 평탄화
+const arr1 = [1, 2, [3, 4]];
+arr1.flat();
+// [1, 2, 3, 4]
+
+const arr2 = [1, 2, [3, 4, [5, 6]]];
+arr2.flat();
+// [1, 2, 3, 4, [5, 6]]
+
+const arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2);
+// [1, 2, 3, 4, 5, 6]
+
+const arr4 = [1, 2, [3, 4, [5, 6, [7, 8, [9, 10]]]]];
+arr4.flat(Infinity);
+// 배열 구멍 제거
+const arr5 = [1, 2, , 4, 5];
+arr5.flat();
+// [1, 2, 4, 5]
+
+```
+### forEach
+> 주어진 함수를 배열 요소 각각에 대해 실행한다.
+#### 사용법
+```js
+arr.forEach(callback(currentvalue[, index[, array]])[, thisArg])
+// currentValue: 처리할 현재 요소
+// index: 처리할 현재 요소의 인덱스
+// array: forEach()를 호출한 배열
+// thisArg: callback을 실행할 때 this로 사용할 값
+```
+```js
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach((element) => console.log(element));
+// "a"
+// "b"
+// "c"
+```
+
