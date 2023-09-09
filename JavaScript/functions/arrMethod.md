@@ -168,4 +168,13 @@ array1.forEach((element) => console.log(element));
 // "b"
 // "c"
 ```
+### from
+> 유사배열, 반복가능 객체를 얕게 복사해서 새로운 객체를 반환한다.
+```js
+console.log(Array.from('foo'));
+// output: Array ["f", "o", "o"]
 
+console.log(Array.from([1, 2, 3], (x) => x + x));
+//  output: [2, 4, 6]
+
+```
