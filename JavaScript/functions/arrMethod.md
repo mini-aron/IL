@@ -178,3 +178,68 @@ console.log(Array.from([1, 2, 3], (x) => x + x));
 //  output: [2, 4, 6]
 
 ```
+
+### push
+> 배열의 끝에 요소를 추가하고, 배열의 새로운 길이를 반환한다.
+```js
+let arr = [1, 2, 3]
+let count = arr.push(4)
+
+console.log(count) //output: 4
+console.log(arr) //output: [1, 2, 3, 4]
+
+arr.push(5,6,7)
+
+console.log(arr) //output: [1, 2, 3, 4, 5, 6, 7]
+Array.prototype.push.apply(arr, ['8', '9', '10']);
+
+console.log(arr); //output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+### unshift
+> 새로운 요소를 배열의 맨 앞에 추가하고, 새로운 길이를 반환한다.
+```js
+let arr = [1, 2, 3]
+
+let count = arr.unshift(-1, 0)
+
+console.log(count) //output: 5
+console.log(arr) //output: [-1, 0, 1, 2, 3]
+arr.unshift(...[-4, -3, -2]);
+
+console.log(arr); //output: [-4, -3, -2, -1, 0, 1, 2, 3]
+```
+
+### pop
+> 배열에서 마지막 요소를 제거하고 제고 된 요소를 반환한다.
+```js
+const arr = [1, 2, 3, 4];
+
+let deleted = arr.pop();
+
+console.log(deleted); // 4
+console.log(arr); // [1, 2, 3]
+
+
+deleted = arr.pop('3');
+
+console.log(deleted); // 3
+console.log(arr); // [1, 2]
+```
+
+### shift
+> 배열에서 첫 번째 요소를 제거하고, 제거된 요소를 반환한다.
+```js
+const arr = ['1', '2', '3', '4'];
+
+let deleted = arr.shift();
+
+console.log(deleted); // '1'
+console.log(arr); // ['2', '3', '4']
+
+
+deleted = arr.shift('2');
+
+console.log(deleted); // '2'
+console.log(arr); // ['3', '4']
+```
