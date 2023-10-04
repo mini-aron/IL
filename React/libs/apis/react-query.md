@@ -45,3 +45,113 @@ cacheTime, //default: 5분 (60 * 5 * 1000)
 ## Client 데이터와 Server 데이터 간의 분리
 >  Client 데이터의 경우 Redux, Recoil, mobX와 같은 전역 상태 관리 라이브러리들을 통해 잘 관리되고있지만, 이런 라이브러리들이 Server데이터까지 관리를 해야하는 상황이 발생하기도 한다.  
 위의 라이브러리들은 Client 데이터를 관리하는데 로직이 집중되어있기 때문에, Server 데이터까지 효율적으로 관리하기에는 한계가 분명하다.
+
+
+## SWR과의 차이
+
+### SWR
+```js
+import useSWR from "swr";
+
+const App = () => (
+  <div>
+    <SWRProfile />
+  </div>
+);
+
+const SWRProfile = () => {
+  const {data, error} = useSWR("https://61b88c9d64e4a10017d19053.mockapi.io/user", url =>
+    fetch(url).then(res => res.json())
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+
+  return <Profile library="SWR" data={data} />;
+}
+
+const Profile = ({library, data}) => (
+  <div>
+    <h1>Users from {library}</h1>
+    {data.map(user => <p>{user.level} developer <strong>{user.name}</strong></p>)}
+  </div>
+)
+
+export default App;
+```
+### React-Query
+```js
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+
+const queryClient = new QueryClient();
+const url = "https://61b88c9d64e4a10017d19053.mockapi.io/user";
+
+const App = () => (
+  <div>
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryProfile />
+    </QueryClientProvider>
+  </div>
+);
+
+const ReactQueryProfile = () => {
+  const {isLoading, error, data, isFetching} = useQuery("users", () =>
+    fetch("https://61b88c9d64e4a10017d19053.mockapi.io/user").then(res => res.json())
+  );
+
+  if (error) return <div>failed to load</div>;
+  if (isLoading) return <div>loading...</div>;
+
+  return <Profile library="React Query" data={data} />;
+}
+
+const Profile = ({library, data}) => (
+  <div>
+    <h1>Users from {library}</h1>
+    {data.map(user => <p>{user.level} developer <strong>{user.name}</strong></p>)}
+  </div>
+)
+
+export default App;
+```
+
+### SWR의 장점
+#### Provider
+SWR은 별도의 Provider 없이 바로 사용이 가능하나 React-Query는 기본적으로 컴포넌트를 감싸는 별도의 Provider가 필요해 설정해야한다.
+
+#### Fetcher
+useSWR과 useQuery모두 두번째 인자로 fetcher를 받는다.  
+이때 SWR의 경우 첫번째 인자로 url을 받고, 두번째 인자인 fetcher에 받은 url을 넘겨주는 방식을 사용한다. 또한 SWR은 전역설정을 통해 fetcher를 정해둘 수 있다.  
+하지만 React-Query는 fetcher에 url을 직접 전달해줘야한다.
+
+### React-Query의 장점
+#### Devtools
+React-Query에선 공식적으로 react-query/devtools 을 통해 Devtool을 지원한다.  
+개발모드에서만 사용하며, devtools를 통해 더 확실하게 데이터의 흐름을 파악할 수 있다.  
+SWR또한 devtools를 사용할 수 있으나, 서드 파티 라이브러리를 이용해야한다.
+
+#### 무한 스크롤 구현
+SWR과 React-Query 모두 무한 스크롤을 구현하는데 필요한 기능들을 제공한다.  
+그러나 SWR로 무한 스크롤을 구현할려면 부가적인 코드를 작성해야하는 반면, React-Query에서는 getPreviousPageParam, fetchPreviousPage, hasPreviousPage 와 같은 다양한 페이지 관련 기능이 존재해 이를 이용해 무한 스크롤을 쉽게 구현 가능하다.  
+
+##### Selectors 
+React-Query에서는 select 키워드를 사용해 raw data로부터 원하는 데이터를 추출해 반환할 수 있다. 
+```js
+import { useQuery } from 'react-query'
+
+function User() {
+  const { data } = useQuery('user', fetchUser, {
+    select: user => user.username,
+  })
+  return <div>Username: {data}</div>
+}
+```
+👆 위의 예시처럼 select 를 통해 원하는 데이터에 접근한 뒤 추출이 가능하다  
+
+#### Data Optimization
+SWR과 다르게 React-Query는 쿼리가 업데이트 될 때만 refetch를 진행한다.  
+또한 여러 컴포넌트에서 동일한 쿼리를 사용하는 경우 한번에 묶어 업데이트를 진행한다.  
+이를 통해 렌더링 퍼포먼스를 개선시킨다.  
+
+#### Garbage Collection
+React-Query는 지정된 시간동안 쿼리가 사용되지 않는다면 자동으로 메모리 해제를 하는 Auto Garbage Collection을 통해 메모리를 관리해준다.
