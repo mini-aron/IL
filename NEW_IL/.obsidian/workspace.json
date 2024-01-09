@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "603ef63eb43543c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f65db3992214ae1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dcda989851741199",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dart/노마더 코더/Dart 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "84eacd9ada46bf47",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1f2698899f46ec5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "03e9b87b38605e5f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6fce8ca6aa7a753c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#Named",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1daa521e73a521f0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "bcb76963a4b9f60f",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed51bbfa86b3e3e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1922db194b1d71d8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dart/노마더 코더/Dart 2.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d4b3b7963e864bdc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dart/노마더 코더/Dart 2.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "62e7de878b34c326",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9463a3dded04da96",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dart/노마더 코더/Dart 2.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "dcda989851741199",
+  "lastOpenFiles": [
+    "Dart/노마더 코더/Dart 1.md",
+    "Dart/노마더 코더/Dart 2.md",
+    "JavaScript/React/무제 파일.md",
+    "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
+    "JavaScript/자료구조/Js Heap(힙).md",
+    "JavaScript/자료구조/Js Queue(큐).md",
+    "JavaScript/자료구조/JS Stack(스택).md",
+    "TIL/JavaScript/call by value.md",
+    "무제 파일.md",
+    "Dart/노마더 코더",
+    "TypeScript/Types/Type system.md",
+    "Dart",
+    "1_unEeZQLWQrxR93Ao8wBDDg.webp",
+    "1_7jCVSsm5-gEoXsgmfGqQyw.webp",
+    "JavaScript/React/Hooks",
+    "팀장이 되는 법.md",
+    "TIL/CS/kernel(커널).md",
+    "TypeScript/Types",
+    "TypeScript",
+    "Pasted image 20231209155704.jpg",
+    "TIL/Internet",
+    "TIL/JavaScript/functions",
+    "TIL/JavaScript",
+    "TIL/CS",
+    "TIL",
+    "Pasted image 20231128235120.png",
+    "CS/브라우저 렌더링.md",
+    "JavaScript/babel.md",
+    "Rendering Patterns - 페이지 렌더링 패턴 같이보기(임성호, @sungh0lim).md",
+    "JavaScript/자료구조/자료구조.md",
+    "Pasted image 20231128235110.png",
+    "JavaScript/React/React.md",
+    "JavaScript/Abstract Syntax Tree.md",
+    "JavaScript/JSX.md",
+    "JavaScript/JavaScript.md",
+    "무제 파일.canvas"
+  ]
+}
