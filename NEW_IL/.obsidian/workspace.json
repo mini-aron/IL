@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7f65db3992214ae1",
+        "id": "930ddc970630c5fa",
         "type": "tabs",
         "children": [
           {
-            "id": "dcda989851741199",
+            "id": "9cd5a5f7c8519b15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dart/노마더 코더/Dart 2.md",
+                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dart/노마더 코더/Dart 2.md",
+                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dart/노마더 코더/Dart 2.md",
+                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dart/노마더 코더/Dart 2.md"
+                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md"
               }
             }
           }
@@ -147,16 +146,22 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "dcda989851741199",
+  "active": "9cd5a5f7c8519b15",
   "lastOpenFiles": [
+    "JavaScript/React/Hooks/useState.md",
+    "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
+    "TIL/TypeScript/Types.md",
     "Dart/노마더 코더/Dart 1.md",
     "Dart/노마더 코더/Dart 2.md",
+    "JavaScript/Abstract Syntax Tree.md",
+    "JavaScript/babel.md",
+    "JavaScript/JavaScript.md",
+    "TIL/JavaScript/call by value.md",
+    "TIL/TypeScript",
     "JavaScript/React/무제 파일.md",
-    "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
     "JavaScript/자료구조/Js Heap(힙).md",
     "JavaScript/자료구조/Js Queue(큐).md",
     "JavaScript/자료구조/JS Stack(스택).md",
-    "TIL/JavaScript/call by value.md",
     "무제 파일.md",
     "Dart/노마더 코더",
     "TypeScript/Types/Type system.md",
@@ -173,17 +178,13 @@
     "TIL/JavaScript/functions",
     "TIL/JavaScript",
     "TIL/CS",
-    "TIL",
     "Pasted image 20231128235120.png",
     "CS/브라우저 렌더링.md",
-    "JavaScript/babel.md",
     "Rendering Patterns - 페이지 렌더링 패턴 같이보기(임성호, @sungh0lim).md",
     "JavaScript/자료구조/자료구조.md",
     "Pasted image 20231128235110.png",
     "JavaScript/React/React.md",
-    "JavaScript/Abstract Syntax Tree.md",
     "JavaScript/JSX.md",
-    "JavaScript/JavaScript.md",
     "무제 파일.canvas"
   ]
 }
