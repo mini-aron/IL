@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
+                "file": "JavaScript/React/Hooks/useEffect와 LifeCycle.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
+                "file": "JavaScript/React/Hooks/useEffect와 LifeCycle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
+                "file": "JavaScript/React/Hooks/useEffect와 LifeCycle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md"
+                "file": "JavaScript/React/Hooks/useEffect와 LifeCycle.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "9cd5a5f7c8519b15",
   "lastOpenFiles": [
-    "JavaScript/React/Hooks/useState.md",
+    "Pasted image 20240116224402.png",
+    "Pasted image 20240116223603.png",
     "JavaScript/React/Hooks/useEffect와 useLayoutEffect의 차이.md",
+    "JavaScript/React/Hooks/useEffect와 LifeCycle.md",
+    "JavaScript/React/Hooks/useState.md",
     "TIL/TypeScript/Types.md",
     "Dart/노마더 코더/Dart 1.md",
     "Dart/노마더 코더/Dart 2.md",
