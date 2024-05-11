@@ -4,9 +4,9 @@
 
 ## MVC 동작방식
 
-> 사용자의 Request(요청)를 Controller가 받는다.
-> Controller는 Service에서 비즈니스 로직을 처리한 후 결과를 Model에 담는다.
-> Model에 저장된 결과를 바탕으로 시각적 요소 출력을 담당하는 View를 제어하여 사용자에게 전달한다.
+> 1. 사용자의 Request(요청)를 Controller가 받는다.  
+> 2. Controller는 Service에서 비즈니스 로직을 처리한 후 결과를 Model에 담는다.  
+> 3. Model에 저장된 결과를 바탕으로 시각적 요소 출력을 담당하는 View를 제어하여 사용자에게 전달한다.  
 
 ## Model(모델)
 
